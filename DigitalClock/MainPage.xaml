@@ -7,11 +7,14 @@
     <ContentPage.Resources>
         <drawable:GraphicsDrawable x:Key="drawable" />
     </ContentPage.Resources>
-    <VerticalStackLayout
-        VerticalOptions="Center">
-        <GraphicsView Drawable="{StaticResource drawable}"
-                      HeightRequest="300"
-                      WidthRequest="400" />
-    </VerticalStackLayout>
+    <FlexLayout
+        JustifyContent="Center"
+        AlignItems="Center">
+        <GraphicsView
+            Drawable="{StaticResource drawable}"
+            WidthRequest="400"
+            HeightRequest="150"
+            x:Name="ClockGraphicsView"/>
+    </FlexLayout>
 </ContentPage>
 
